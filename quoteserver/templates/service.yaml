@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ include "quoteserver.fullname" . }}
   labels:
-    {{- include "quoteserver.labels" . | nindent 4 }}
+    {{- include "quoteserver.labels" . | nindent 4 -}}
     {{- include "quoteserver.customLabels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
@@ -13,4 +13,4 @@ spec:
     protocol: TCP
     name: http
   selector:
-    {{- include "quoteserver.selectorLabels" . | nindent 4 }}
+    {{- include "quoteserver.selectorLabels" . | nindent 4 -}}

@@ -2,7 +2,17 @@ apiVersion: v1
 entries:
   quoteserver:
   - apiVersion: v2
-    created: "2024-05-22T14:00:08.534465951+02:00"
+    appVersion: 0.1.1
+    created: "2024-05-22T15:23:36.601115597+02:00"
+    description: A Helm chart to deploy the quoteserver service
+    digest: 1ffc8e26fb70dbb2b8f42d2fb9fc6650e473648be5c040a6cd8bb0e5d5f3cb80
+    name: quoteserver
+    type: application
+    urls:
+    - https://african-pathogen-archive.github.io/helm-charts/quoteserver-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    created: "2024-05-22T15:23:36.600861353+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 3f4d8572de9b69778b3f1a5b3cd1c20c19e9b8721ffdfae88687da683ef4942a
     name: quoteserver
@@ -11,7 +21,7 @@ entries:
     - https://african-pathogen-archive.github.io/helm-charts/quoteserver-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2024-05-22T14:00:08.534246976+02:00"
+    created: "2024-05-22T15:23:36.600610259+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: e708cbc07c491babee8e1c34ddf182f5275626c7d227fd115e65588db834c9f3
     name: quoteserver
@@ -19,4 +29,4 @@ entries:
     urls:
     - https://african-pathogen-archive.github.io/helm-charts/quoteserver-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-22T14:00:08.53380043+02:00"
+generated: "2024-05-22T15:23:36.599413427+02:00"
