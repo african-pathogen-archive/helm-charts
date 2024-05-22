@@ -1,13 +1,13 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "stateless-svc.fullname" . -}}
+{{- $fullName := include "quoteserver.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
 {{- $svcPortName := .Values.service.portName -}}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
-    {{- include "stateless-svc.labels" . | nindent 4 }}
-    {{- include "stateless-svc.customLabels" . | nindent 4 }}  
+    {{- include "quoteserver.labels" . | nindent 4 }}
+    {{- include "quoteserver.customLabels" . | nindent 4 }}  
   {{- .Values.ingress.annotations  }}
 spec:
   {{- if .Values.ingress.class }}
