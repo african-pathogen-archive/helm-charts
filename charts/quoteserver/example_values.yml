@@ -13,3 +13,9 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
+
+
+podSecurityContext:
+  runAsGroup: 9999
+  runAsNonRoot: true
+  runAsUser: 9999

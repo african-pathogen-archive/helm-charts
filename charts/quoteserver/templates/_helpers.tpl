@@ -61,7 +61,6 @@ Create the name of the service account to use
 {{- end -}}
 {{- end -}}
 
-
 {{- define "quoteserver.customLabels" -}}
 {{- if .Values.customLabels -}}
   {{- range $key, $value := .Values.customLabels -}}
