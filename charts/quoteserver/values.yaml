@@ -13,6 +13,11 @@ service:
 container:
   port: 9000
 
+podSecurityContext:
+  runAsGroup: 9999
+  runAsNonRoot: true
+  runAsUser: 9999
+
 ingress:
   annotations: {}
   hosts:
