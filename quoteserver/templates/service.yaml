@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "quoteserver.fullname" . }}
+  labels:
+    {{- include "quoteserver.labels" . | nindent 4 }}
+    {{- include "quoteserver.customLabels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+  - port: {{ .Values.service.port }}
+    targetPort: {{ .Values.container.port }}
+    protocol: TCP
+    name: http
+  selector:
+    {{- include "quoteserver.selectorLabels" . | nindent 4 }}

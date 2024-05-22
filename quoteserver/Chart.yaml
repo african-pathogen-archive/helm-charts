@@ -1,0 +1,6 @@
+apiVersion: v2
+name: quoteserver
+description: A Helm chart to deploy the quoteserver service
+type: application
+version: 0.1.0
+releaseVersion: 0.1.0

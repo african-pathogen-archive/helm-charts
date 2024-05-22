@@ -1,0 +1,44 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/african-pathogen-archive/quoteserver
+  tag: main
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  portName: http
+
+container:
+  port: 9000
+
+ingress:
+  annotations: {}
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: {}
+
+affinity: {}
+
+probes:
+  liveness:
+    path: /
+    initialDelaySeconds: 5
+    timeoutSeconds: 1
+    periodSeconds: 10
+    failureThreshold: 3
+  readiness:
+    path: /
+    initialDelaySeconds: 10
+    timeoutSeconds: 1
+    periodSeconds: 5
+    failureThreshold: 3
