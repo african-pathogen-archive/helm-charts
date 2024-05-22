@@ -1,0 +1,15 @@
+# example_values.yml, based on what is deployed on the APA dev kubernetes cluster
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  className: private
+  enabled: true
+  tls:
+    - hosts:
+        - quoteserver.sanbi.ac.za
+      secretName: quoteserver-tls
+  hosts:
+    - host: quoteserver.sanbi.ac.za
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
