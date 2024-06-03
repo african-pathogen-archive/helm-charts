@@ -1,4 +1,4 @@
-# example_values.yml, based on what is deployed on the APA dev kubernetes cluster
+# example_values.yml, based on what is deployed on the APA dev kubernetes
 ingress:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
@@ -14,8 +14,3 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
 
-
-podSecurityContext:
-  runAsGroup: 9999
-  runAsNonRoot: true
-  runAsUser: 9999

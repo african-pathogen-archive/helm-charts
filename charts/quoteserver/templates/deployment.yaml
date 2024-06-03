@@ -35,6 +35,15 @@ spec:
           env:
             - name: PORT
               value: {{ .Values.container.port | quote }}
+            - name: DB_URL
+              value: {{ .Values.appConfig.psql | quote}}
+            - name: DB_USER
+              value: {{ .Values.appConfig.dbUser | quote }}
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.appConfig.psqlSecretName }}
+                  key: {{ .Values.appConfig.psqlSecretKey }}
           ports:
             - containerPort: {{ .Values.container.port }}
               name: http

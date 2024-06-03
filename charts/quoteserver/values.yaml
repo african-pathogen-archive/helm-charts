@@ -5,6 +5,11 @@ image:
   tag: latest
   pullPolicy: Always
 
+appConfig:
+  databaseUrl: postgres://quoteserver-db-postgresql:5432/quoteserver
+  psqlSecretName: quoteserver-db-postgresql
+  psqlSecretKey: postgres-password
+
 service:
   type: ClusterIP
   port: 80
