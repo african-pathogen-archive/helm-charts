@@ -10,7 +10,7 @@ appConfig:
   dbName: postgres
   dbUser: postgres
   psqlSecretName: quoteserver-db-postgresql
-  psqlSecretKey: postgres-password
+  psqlSecretKey: postgresql-password
 
 service:
   type: ClusterIP
