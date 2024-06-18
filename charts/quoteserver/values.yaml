@@ -6,7 +6,9 @@ image:
   pullPolicy: Always
 
 appConfig:
-  databaseUrl: postgres://quoteserver-db-postgresql:5432/quoteserver
+  dbPort: "5432"
+  dbName: postgres
+  dbUser: postgres
   psqlSecretName: quoteserver-db-postgresql
   psqlSecretKey: postgres-password
 

@@ -1,4 +1,6 @@
 # example_values.yml, based on what is deployed on the APA dev kubernetes
+appConfig:
+  dbHost: quoteserver-db-postgresql
 ingress:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
