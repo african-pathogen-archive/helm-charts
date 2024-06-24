@@ -18,7 +18,7 @@ service:
   portName: http
 
 container:
-  port: 9000
+  port: 5000
 
 podSecurityContext:
   runAsGroup: 9999
