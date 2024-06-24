@@ -23,3 +23,12 @@ helm upgrade --install projects-svc apa/projects-svc --debug -f values.yml -n ap
 ```
 
 where the `values.yml` is based on the `example_values.yml` in this repository.
+
+To update the service, uninstall with:
+
+```bash
+helm uninstall -n apa projects-svc
+```
+
+and re-install again.
+
