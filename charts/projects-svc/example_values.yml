@@ -1,0 +1,18 @@
+# example_values.yml, based on what is deployed on the APA dev kubernetes
+appConfig:
+  dbHost: projects-svc-db-postgresql
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  className: private
+  enabled: true
+  tls:
+    - hosts:
+        - apaprojects-svc.sanbi.ac.za
+      secretName: projects-svc-tls
+  hosts:
+    - host: apaprojects-svc.sanbi.ac.za
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+
