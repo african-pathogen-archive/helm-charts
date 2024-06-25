@@ -16,3 +16,13 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
 
+
+container:
+  port: 5000
+
+probes:
+  liveness:
+    path: /swagger
+  readiness:
+    path: /swagger
+
