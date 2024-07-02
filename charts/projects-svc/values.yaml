@@ -60,3 +60,5 @@ probes:
     timeoutSeconds: 1
     periodSeconds: 5
     failureThreshold: 3
+
+extraEnv: {}

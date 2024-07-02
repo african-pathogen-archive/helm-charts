@@ -20,6 +20,10 @@ ingress:
 container:
   port: 5000
 
+extraEnv:
+  - PROJECTS_SVC_SECRET: someSecret
+  # - CORS_ORIGINS: "*"
+
 probes:
   liveness:
     path: /swagger
