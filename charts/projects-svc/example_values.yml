@@ -21,8 +21,8 @@ container:
   port: 5000
 
 extraEnv:
-  - PROJECTS_SVC_SECRET: someSecret
-  # - CORS_ORIGINS: "*"
+  PROJECTS_SVC_SECRET: someSecret
+  # CORS_ORIGINS: "*"
 
 probes:
   liveness:
