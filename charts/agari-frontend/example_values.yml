@@ -1,0 +1,16 @@
+# example_values.yml, based on what is deployed on the APA dev kubernetes
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  className: private
+  enabled: true
+  tls:
+    - hosts:
+        - agari-frontend.sanbi.ac.za
+      secretName: agari-frontend-tls
+  hosts:
+    - host: agari-frontend.sanbi.ac.za
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+
