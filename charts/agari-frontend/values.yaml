@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: pvanheus/agari-frontend
+  repository: pvanheus/agari-website
   tag: latest
   pullPolicy: Always
 

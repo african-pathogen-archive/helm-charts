@@ -32,6 +32,12 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          {{- if .Values.ingress.hosts - }}
+          env:
+            - name: __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS
+              value: {{ .Values.ingress.hosts[0].host }}
+          {{- end -}}
+
           ports:
             - containerPort: {{ .Values.container.port }}
               name: http
