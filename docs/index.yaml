@@ -3,7 +3,7 @@ entries:
   agari-frontend:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.097855568+02:00"
+    created: "2025-07-22T13:43:32.927677803+02:00"
     description: A Helm chart to deploy the agari-frontend as a service
     digest: bbca1152d811d2d41b38f8ec9bb3d689da81deadae8df95ba2eb59fd6342ef16
     name: agari-frontend
@@ -13,7 +13,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.097557555+02:00"
+    created: "2025-07-22T13:43:32.927148191+02:00"
     description: A Helm chart to deploy the agari-frontend as a service
     digest: 97644ad50496e675e680aded55d05f97890d5c6d9253ec6f0441d8697870316f
     name: agari-frontend
@@ -23,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.097250076+02:00"
+    created: "2025-07-22T13:43:32.92652632+02:00"
     description: A Helm chart to deploy the agari-frontend as a service
     digest: bdbbe0b1a041e644ca637c5c7080a9ce15e8363650eb03b0aee15ef5e83037b4
     name: agari-frontend
@@ -34,7 +34,7 @@ entries:
   projects-svc:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.100018319+02:00"
+    created: "2025-07-22T13:43:32.929279048+02:00"
     description: A Helm chart to deploy the projects service
     digest: 9010368d1cc8b6117ad9fb84e0d61abd9f3c76a818488cf69452100e1d6b8474
     name: projects-svc
@@ -44,7 +44,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.099402441+02:00"
+    created: "2025-07-22T13:43:32.928748737+02:00"
     description: A Helm chart to deploy the projects service
     digest: f9bf413b5f17a18c98ba77346986fe6ae6749a4e5210c29f8a97de8f47d4b155
     name: projects-svc
@@ -54,7 +54,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.098705316+02:00"
+    created: "2025-07-22T13:43:32.928215185+02:00"
     description: A Helm chart to deploy the projects service
     digest: 29b46dba40a90aba3c8a90770c3396e37aedaecd6bb3eee40152e723a1e63824
     name: projects-svc
@@ -65,7 +65,7 @@ entries:
   quoteserver:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.104934134+02:00"
+    created: "2025-07-22T13:43:32.934668386+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 0fedccc402d696befe9976799ce53cea6e4c1e791a665b6106c00684478b7e6a
     name: quoteserver
@@ -75,7 +75,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.104303558+02:00"
+    created: "2025-07-22T13:43:32.933795404+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: f16f547f7af2b0bcb3ec3b55ad135487b234dd5ce62ced937b83cb6cdab27722
     name: quoteserver
@@ -85,7 +85,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.103689271+02:00"
+    created: "2025-07-22T13:43:32.932127029+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 428014273a4ce6e57289051f0d8c15c573ef6a54ba1b53e5db87258bf529187c
     name: quoteserver
@@ -95,7 +95,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.10303279+02:00"
+    created: "2025-07-22T13:43:32.931658583+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 0da08d6a8c16bb4bd55270aab7eecfe32941bb6ef4a1e63c4da100c8d28f7f9b
     name: quoteserver
@@ -105,7 +105,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-07-22T13:26:08.102415401+02:00"
+    created: "2025-07-22T13:43:32.931169321+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 8727c688b9e4de5ff4c8ec47be13c3c36d3c4f2eedf66774cbe5d2e6520f091f
     name: quoteserver
@@ -115,7 +115,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-07-22T13:26:08.101840077+02:00"
+    created: "2025-07-22T13:43:32.930748246+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 1ffc8e26fb70dbb2b8f42d2fb9fc6650e473648be5c040a6cd8bb0e5d5f3cb80
     name: quoteserver
@@ -124,7 +124,7 @@ entries:
     - https://african-pathogen-archive.github.io/helm-charts/quoteserver-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2025-07-22T13:26:08.101256988+02:00"
+    created: "2025-07-22T13:43:32.930277948+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: 3f4d8572de9b69778b3f1a5b3cd1c20c19e9b8721ffdfae88687da683ef4942a
     name: quoteserver
@@ -133,7 +133,7 @@ entries:
     - https://african-pathogen-archive.github.io/helm-charts/quoteserver-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2025-07-22T13:26:08.10065733+02:00"
+    created: "2025-07-22T13:43:32.92981609+02:00"
     description: A Helm chart to deploy the quoteserver service
     digest: e708cbc07c491babee8e1c34ddf182f5275626c7d227fd115e65588db834c9f3
     name: quoteserver
@@ -141,4 +141,4 @@ entries:
     urls:
     - https://african-pathogen-archive.github.io/helm-charts/quoteserver-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-22T13:26:08.09421935+02:00"
+generated: "2025-07-22T13:43:32.925757821+02:00"

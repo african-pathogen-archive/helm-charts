@@ -1,4 +1,5 @@
 all: charts/packaged docs/index.yaml
+
 docs/index.yaml: $(wildcard docs/*.tgz)
 	helm repo index ./docs --url https://african-pathogen-archive.github.io/helm-charts/
 
@@ -12,3 +13,4 @@ charts/packaged: $(shell find charts/* -type d)
 		fi; \
 	done
 	touch charts/packaged
+
